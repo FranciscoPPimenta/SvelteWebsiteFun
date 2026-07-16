@@ -49,7 +49,8 @@ I'll be using on this website:
 
 - CSS
 - JS
-- NODE (For now nothing)
+- NODE
+- Svelte
 
 ## Database
 

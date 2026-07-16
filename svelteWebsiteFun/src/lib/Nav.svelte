@@ -6,7 +6,7 @@
         const links = document.querySelectorAll('#offCanvas a');
         links.forEach(link => {
             link.addEventListener('click', () => {
-                const closeBtn = document.querySelector('#offCanvas .btn-close');
+                const closeBtn = document.querySelector('#offCanvas .btn-close') as HTMLButtonElement | null;
                 closeBtn?.click();
             });
         });

@@ -22,6 +22,6 @@ a{
     filter:brightness(0.45);
 }
 
-#card-row{
-    margin-top: 20px;
+#carousel{
+    margin-bottom: 20px;
 }
