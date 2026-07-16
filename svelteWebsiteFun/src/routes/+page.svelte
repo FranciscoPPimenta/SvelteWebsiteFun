@@ -1,5 +1,6 @@
 <script>
   import './home.css';
+  import './mobile.css';
   import { goto } from '$app/navigation';
 
 </script>
