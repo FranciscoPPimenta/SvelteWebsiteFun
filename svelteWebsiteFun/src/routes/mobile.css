@@ -23,7 +23,7 @@
     }
 
     *{
-        color: #ffffff;
+        color: rgba(30, 30, 30, 0.5);
     }
 
     .button{
@@ -41,15 +41,15 @@
             transform 0.3s ease,
             letter-spacing 0.3s ease;
         clip-path: polygon(12px 0%, 100% 0%,calc(100% - 12px) 100%, 0% 100%);
-        color: #ffffff;
-        border-color: #ffffff;
+        color: rgba(30, 30, 30, 0.5);
+        border-color: rgba(30, 30, 30, 0.5);
         box-shadow:
             0 0 8px rgba(0,0,0,0.3),
-            inset 0 0 8px rgba(0,0,0,0.05);
+            inset 0 0 8px rgba(30, 30, 30, 0.5);
     }
 
     .forward{
         text-decoration:none;
-        color:white;
+        color:rgba(30, 30, 30, 0.5);
     }
 }
