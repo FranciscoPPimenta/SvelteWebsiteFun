@@ -1,42 +1,75 @@
-# sv
+# Website For Fun
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Welcome to my Website. Something I did for fun and to "un-bore" me.
+Site's purpose is to add random stuff about games I usually play.
+I'll be adding stuff every once in a while, such as:
 
-## Creating a project
+- Other games
+- Information about existing games
+- "Calculators"
+- Etc.
 
-If you're seeing this, you've probably already done this step. Congrats!
+The website is merely to keep track of some stuff _PLUS_
+make me better at creating/designing a website.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+In the future I'll be also making an APP for this website.
 
-To recreate this project with the same configuration:
+For now I only have tabs for games like:
 
-```sh
-# recreate this project
-npx sv@0.16.3 create --template minimal --types ts --add tailwindcss="plugins:typography" --install npm svelteWebsiteFun
-```
+- League of Legengs❌
+- Attack on Titan 2❌
+- Crusaders King 3❌
+- Dominions 6❌
+- Counter-Strike 2❌
+- Valorant❌
+- Wuthering Waves❌
+- Forza Horizon 6❌
 
-## Developing
+I'll be adding in the future:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Elden Ring❌
+- TrackMania Nations Forever❌
+- Genshin Impact❌
+- Etheria Restart❌
+- Honkai Star Rail❌
+- TeamFight Tactics❌
 
-```sh
-npm run dev
+Each game will be having different "attributes" depending on what I believe it's the appropriate for each of them.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+# Design
 
-## Building
+This website will be using bootstrap (For now).
+I want to be able to also design it the way I want,
+using CSS with code _I_ wrote, and not using a
+library.
 
-To create a production version of your app:
+# Used Languages
 
-```sh
-npm run build
-```
+I'll be using on this website:
 
-You can preview the production build with `npm run preview`.
+- CSS
+- JS
+- NODE (For now nothing)
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Database
+
+I'll be using SupaBase for the database
+
+## Supabase
+
+Will be used for
+
+- Creation of data by the user❌
+- Deletion of data by the user❌
+- Update of data by the user❌
+- Follow count for each user❌
+- Friend count for each user❌
+- (More to decide)
+
+# Use whenever I've done a part of the website
+
+✅
+
+# Use when (new parts to be done) are not done
+
+❌
