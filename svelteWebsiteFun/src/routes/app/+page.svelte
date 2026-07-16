@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="row" id="card-row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="card mb-3">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="card mb-3">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
