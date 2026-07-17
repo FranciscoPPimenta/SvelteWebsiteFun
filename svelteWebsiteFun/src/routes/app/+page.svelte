@@ -1,13 +1,13 @@
 <script lang="ts">
-    import './home.css';
-    import './mobile.css';
+    import './home_main.css';
+    import './mobile_main.css';
     let { data }: { data: any } = $props();
 
 
 </script>
 <div class="container-fluid">
     <div class="row">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 {#if data.games?.length}
                         {#each data.games as game,index}
@@ -21,15 +21,15 @@
                 {#if data.games?.length}
                     {#each data.games as game,index}
                         <div class="carousel-item {index === 0 ? 'active' : ''} carouselItems">
-                            <img src="{game.image}" class="d-block w-100 carouselImgs" alt="...">
+                            <img src="{game.main_image}" class="d-block w-100 carouselImgs" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{game.name}</h5>
                             </div>
                         </div>
                     {/each}
-            {:else}
-                <p>No games found.</p>
-            {/if}
+                {:else}
+                    <p>No games found.</p>
+                {/if}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -41,7 +41,7 @@
             </button>
         </div>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
         <div class="col">
             <div class="card h-100">
             <img src="..." class="card-img-top" alt="...">

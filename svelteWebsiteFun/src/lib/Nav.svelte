@@ -13,6 +13,8 @@
     });
     import AuroraText from "$lib/components/magic/aurora-text/aurora-text.svelte";
     import { SparklesText } from "$lib/components/magic/sparkles-text";
+    let { data }: { data: any } = $props();
+
 </script>
 <nav class="navbar">
     <div class="container-fluid">
@@ -30,9 +32,20 @@
             <div class="offcanvas-body d-flex flex-column">
                 <ul class="navbar-nav justify-content-end pe-3">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/app/games/">
-                            Games
-                        </a>
+                        <div class="dropdown mt-3">
+                            <button class="nav-link" data-bs-toggle="dropdown">
+                                Games
+                            </button>
+                            <ul class="dropdown-menu">
+                                {#if data.games?.length}
+                                    {#each data.games as game}
+                                        <li><a class="dropdown-item" href={`/app/games/${game.id}/`}>{game.name}</a></li>
+                                    {/each}
+                                {:else}
+                                    <p>No games found.</p>
+                                {/if}
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/app/about/">
@@ -47,7 +60,7 @@
 
                 <ul class="navbar-nav mt-auto">
                     <hr id="divider">
-                    <a type="button" class="btn btn-outline-secondary" href="/login">Login<i class="fa-solid fa-circle-user"></i></a>
+                    <a type="button" class="btn btn-outline-secondary" href="/app/login">Login<i class="fa-solid fa-circle-user"></i></a>
                 </ul>
             </div>
         </div>

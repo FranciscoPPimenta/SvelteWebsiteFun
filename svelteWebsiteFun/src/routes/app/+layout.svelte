@@ -1,11 +1,14 @@
 <script lang="ts">
 	import '../../app.css';
 	import Nav from '../../lib/Nav.svelte';
+	import { page } from '$app/state';
 
-	let { children } = $props();
+	let { data, children } = $props();
 </script>
 
-<Nav />
+{#if page.url.pathname !== '/app/login'}
+	<Nav {data}/>
+{/if}
 
 <svelte:head>
 	<meta charset="UTF-8">

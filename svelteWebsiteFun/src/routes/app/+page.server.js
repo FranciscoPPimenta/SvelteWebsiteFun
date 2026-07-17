@@ -4,7 +4,8 @@ export async function load() {
 
   const { data } = await supabase
     .from("Games")
-    .select("*");
+    .select("*")
+    .order("id", { ascending: true });;
 
   return {
     games: data ?? [],
